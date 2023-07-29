@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoBaseDatos.Ventana_1Controller">
+   <children>
+      <BorderPane fx:id="ventana2" maxHeight="768.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0">
+         <top>
+            <Pane prefHeight="111.0" prefWidth="1366.0" style="-fx-background-color: #4e4f51;" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <Pane prefHeight="768.0" prefWidth="1378.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="778.0" fitWidth="1380.0" layoutX="-14.0" layoutY="-115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/waves.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="577.0" fitWidth="473.0" layoutX="449.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/Cuadro%20Login.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="n_contrasena" focusTraversable="false" layoutX="557.0" layoutY="253.0" prefHeight="34.0" prefWidth="252.0" promptText="Contraseña" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="n_verificacion" focusTraversable="false" layoutX="557.0" layoutY="309.0" prefHeight="34.0" prefWidth="252.0" promptText="Confirmar contraseña" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="559.0" layoutY="72.0" prefHeight="35.0" prefWidth="248.0" text="Nueva cuenta" textFill="#8a8a8a">
+                     <font>
+                        <Font name="Futura Book BT" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="132.0" fitWidth="262.0" layoutX="31.0" layoutY="-125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="n_nombre_usuario" focusTraversable="false" layoutX="557.0" layoutY="198.0" prefHeight="34.0" prefWidth="252.0" promptText="Nombre de usuario" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font name="Futura Book BT" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="crear" alignment="CENTER" contentDisplay="CENTER" layoutX="604.0" layoutY="411.0" mnemonicParsing="false" onAction="#registro" prefHeight="37.0" prefWidth="144.0" style="-fx-background-color: #9ad340; -fx-background-radius: 8; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 5,0,0,1 );" text="Crear" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Heavy Italic BT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="regresar_boton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#change_scene1" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #67b2f3; -fx-background-radius: 8; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 5,0,0,1 );" text="Regresar" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Heavy Italic BT" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="nombre_completo" focusTraversable="false" layoutX="557.0" layoutY="141.0" prefHeight="34.0" prefWidth="252.0" promptText="Nombre completo" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font name="Futura Book BT" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

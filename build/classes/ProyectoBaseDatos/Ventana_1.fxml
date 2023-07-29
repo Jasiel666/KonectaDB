@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="contenedor1" maxHeight="766.0" maxWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoBaseDatos.Ventana_1Controller">
+   <children>
+      <BorderPane maxHeight="766.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1366.0">
+         <top>
+            <Pane prefHeight="111.0" prefWidth="1366.0" style="-fx-background-color: #4e4f51;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="132.0" fitWidth="279.0" layoutX="31.0" layoutY="-14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/Logo.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="MOVE" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="655.0" prefWidth="706.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="269.0" fitWidth="1366.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/demo_olas.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="244.0" fitWidth="625.0" layoutX="741.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/demo_olas.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="652.0" fitWidth="519.0" layoutX="424.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/Cuadro%20Login.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <TextField fx:id="usuario_konecta" focusTraversable="false" layoutX="557.0" layoutY="152.0" prefHeight="34.0" prefWidth="252.0" promptText="Usuario" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font name="Futura Book BT" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="591.0" layoutY="68.0" prefHeight="35.0" prefWidth="184.0" text="Iniciar Sesión" textFill="#8a8a8a">
+                     <font>
+                        <Font name="Futura Book BT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ingresar_konecta" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="557.0" layoutY="285.0" mnemonicParsing="false" onAction="#inicio_sesion" prefHeight="43.0" prefWidth="253.0" style="-fx-background-radius: 8; -fx-background-color: #67b2f3; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) ,4,0,0,1 );" text="Ingresar" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Heavy Italic BT" size="20.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="contrasena_konecta" layoutX="557.0" layoutY="209.0" prefHeight="35.0" prefWidth="253.0" promptText="Contraseña" style="-fx-background-radius: 8;">
+                     <font>
+                        <Font name="Futura Book BT" size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="586.0" layoutY="364.0" prefHeight="17.0" prefWidth="194.0" text="¿No tienes usuario?" textFill="#8a8989">
+                     <font>
+                        <Font name="Futura Book BT" size="16.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="556.0" layoutY="399.0" prefHeight="17.0" prefWidth="255.0" />
+                  <Button fx:id="nuevoUsuario_konecta" alignment="CENTER" layoutX="605.0" layoutY="434.0" mnemonicParsing="false" onAction="#change_scene" prefHeight="43.0" prefWidth="156.0" style="-fx-background-color: #9ad340; -fx-background-radius: 8; -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 5,0,0,1 );" text="Crear usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Heavy Italic BT" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
